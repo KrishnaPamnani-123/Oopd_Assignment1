@@ -49,7 +49,6 @@ double calculateSellingPrice(const vector<YearData>& data, int purchaseYear, int
         if (yearData.year > purchaseYear && yearData.year <= sellingYear) {
             sellingPrice *= (1 + (yearData.growthPrice - yearData.inflation) / 100);
         }
-        // cout << fixed << setprecision(2);
         // cout<<sellingPrice<<"*******"<<yearData.year<<endl;
     }
     return sellingPrice;
