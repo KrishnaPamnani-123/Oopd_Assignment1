@@ -18,7 +18,7 @@ vector<YearData> readCSV(const string& filename) {
     ifstream file(filename);
     string line;
 
-    // Skip header
+    
     getline(file, line);
 
     while (getline(file, line)) {
